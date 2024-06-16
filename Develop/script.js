@@ -8,7 +8,7 @@ const employeeTable = document.getElementById('#employee-table');
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 
-  let employee = [];
+  let employees = [];
 
   let loop = true
   for (loop) {
@@ -16,24 +16,25 @@ let firstName = prompt("First Name");
 let lastName = prompt("Last Name");
 let salary = prompt("Salary");
 
-let employee = {
+let employees = {
   firstName: firstNameCell,
   lastName: lastNameCell,
   salary: Number (salaryCell),
-  employee.push(employee)
 }
+
+employees.push(employee)
+
+loop = confirm ( "Add New Employee?");
+console.log ("loop", loop);
  }
 
+ return employees
 
-let input = prompt("First Name, Last Name, Salary");
-let array = input.split(",");
 console.log(array);
 let data = [
   {input}];
   console.log(data)
 }
-
-
 
 function userInput() {
   console.log(input) 
@@ -41,12 +42,19 @@ function userInput() {
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  console.log(employeesArray);
+  let sum = 0;
+  for(let i = 0; i < employeesArray.length; i++) {
+    sum += employeesArray[i].salary
+  }
+  let average= sum/employeesArray.length
+  console.log("average", average);
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+  let random= Math.floor(Math.random() *employeesArray.length);
+  console.log("", employeesArray[random]);
 }
 
 /*
