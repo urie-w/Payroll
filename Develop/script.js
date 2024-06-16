@@ -11,11 +11,19 @@ const collectEmployees = function() {
   let employee = [];
 
   let loop = true
-  while (loop) {
+  for (loop) {
 let firstName = prompt("First Name");
 let lastName = prompt("Last Name");
 let salary = prompt("Salary");
-  }
+
+let employee = {
+  firstName: firstNameCell,
+  lastName: lastNameCell,
+  salary: Number (salaryCell),
+  employee.push(employee)
+}
+ }
+
 
 let input = prompt("First Name, Last Name, Salary");
 let array = input.split(",");
