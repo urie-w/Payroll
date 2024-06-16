@@ -4,10 +4,19 @@ const addEmployeesBtn = document.querySelector('.btn');
 const employeeTable = document.getElementById('#employee-table');
 
 
-
 // Collect employee data
 const collectEmployees = function() {
-  // TODO: Get user input to create and return an array of employee objects (done)
+  // TODO: Get user input to create and return an array of employee objects
+
+  let employee = [];
+
+  let loop = true
+  while (loop) {
+let firstName = prompt("First Name");
+let lastName = prompt("Last Name");
+let salary = prompt("Salary");
+  }
+
 let input = prompt("First Name, Last Name, Salary");
 let array = input.split(",");
 console.log(array);
@@ -15,6 +24,7 @@ let data = [
   {input}];
   console.log(data)
 }
+
 
 
 function userInput() {
