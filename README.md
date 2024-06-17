@@ -1,11 +1,18 @@
-# Employee Payroll Tracker Starter Code
+# Payroll Employee Table Tracker
 
-GIVEN an employee payroll tracker
-WHEN I click the "Add employee" button
-THEN I am presented with a series of prompts asking for first name, last name, and salary
-WHEN I finish adding an employee
-THEN I am prompted to continue or cancel
-WHEN I choose to continue
-THEN I am prompted to add a new employee
-WHEN I choose to cancel
-THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data
+## Description
+The goal for this project was to make a cite that is easy to use for empoyers to chart the empoyees name and salary. Some challenging parts of this project was getting the information to log into the table properly.
+
+## Usage
+This Website is used to keep track of employees and their salary. It works by clicking add new employee button. Then the modal with promots of first name , last name, and salary are displayed. User enters data and then when they hit cancel it will log all empoyees that where typed iside the modal.
+
+## Images
+![alt text](<Screenshot 2024-06-16 181212.png>) 
+![alt text](<Screenshot 2024-06-16 181258.png>) 
+![alt text](<Screenshot 2024-06-16 181331.png>)
+
+## Credits
+UC Bootcamp, Discord
+
+## License
+None
