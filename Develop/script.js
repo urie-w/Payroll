@@ -13,15 +13,14 @@ let firstName = prompt("First Name");
 let lastName = prompt("Last Name");
 let salary = prompt("Salary");
 
-let employees = {
+let employee = {
   firstName: firstName,
   lastName: lastName,
   salary: Number (salary),
 }
 
 employees.push(employee);
-
-entrylooploop = confirm ( "Add New Employee?");
+entryloop = confirm ( "Add New Employee?");
 console.log ("entryloop", entryloop);
  }
 
